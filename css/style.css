@@ -1,0 +1,253 @@
+/* Fonts */
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("../fonts/gilroylight.woff2") format("woff2"),
+    url("../fonts/gilroylight.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("../fonts/gilroyextrabold.woff2") format("woff2"),
+    url("../fonts/gilroyextrabold.woff") format("woff");
+  font-weight: 800;
+  font-style: normal;
+}
+
+/* Variables */
+
+:root {
+  --basic-black: #000000;
+  --footer-background-dark: #363636;
+  --basic-white: #FFFFFF;
+  --basic-grey: #464646;
+  --basic-half-grey: #7E7E7E;
+  --background-grey-light: #E5E5E5;
+  --background-yellow: #F7E296;
+  --special-green: #91C92F;
+  --buttons-yellow-dark: #F0C52E;
+}
+
+/* Global */
+body {
+  min-width: 1440px;
+  margin: 0;
+  padding: 0;
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 800;
+  color: var(--basic-black);
+  background-color: var(--basic-white);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Main navigation */
+
+.main-navigation-wrapper {
+  background-color: var(--background-yellow);
+}
+
+.main-navigation {
+  font-size: 15px;
+  line-height: auto;
+  color: inherit;
+}
+
+.header-site-navigation {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 20px;
+  list-style: none;
+}
+
+.header-site-navigation a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Menu */
+
+.main-menu a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.main-menu .catalog,
+.main-menu .delivery,
+.main-menu .warranty,
+.main-menu .contacts {
+  text-transform: uppercase;
+  list-style: none;
+}
+
+.catalog-list a {
+  text-decoration: none;
+}
+
+.catalog-item {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 20px;
+  color: inherit;
+}
+
+/* Slider */
+
+.topic {
+  font-size: 47px;
+  line-height: 58px;
+}
+
+.topic-text {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 20px;
+
+}
+
+
+
+.feature {
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-weight: 300;
+  letter-spacing: 0.1em;
+}
+
+.characteristics {
+  font-size: 36px;
+  line-height: 42px;
+}
+
+.description {
+  font-size: 13px;
+  line-height: 15px;
+}
+
+
+.category-list a {
+  color: inherit;
+  text-decoration: none;
+
+}
+
+/* Service */
+
+
+.service-head {
+  font-size: 47px;
+  line-height: 58px;
+  letter-spacing: 0.2em;
+
+}
+
+
+
+.service-info {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 30px;
+  letter-spacing: 0.1em;
+}
+
+
+/* Brands */
+
+.brands {
+  list-style: none;
+
+}
+
+
+
+.about-us-head,
+.contacts-head{
+  font-size: 47px;
+line-height: 58px;
+letter-spacing: 0.2em;
+}
+
+.about-us-info,
+.contacts-info{
+font-family: "Open Sans", "Arial", sans-serif;
+font-weight: 300;
+font-size: 15px;
+line-height: 28px;
+
+}
+
+.transport-company{
+  font-size: 16px;
+line-height: 28px;
+}
+
+
+
+
+
+
+/* Button */
+
+.button {
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  color: inherit;
+  vertical-align: top;
+  text-transform: uppercase;
+  background-color: var(--buttons-yellow-dark);
+  border: none;
+  letter-spacing: 0.2em;
+}
+
+.button:hover,
+.button:focus,
+.button:active {
+  background-color: var(--special);
+  opacity: 0.3;
+}
+
+
+
+
+/* Main footer */
+
+.main-footer {
+  color: var(--basic-white);
+  background-color: var(--footer-background-dark);
+
+}
+
+.main-footer a {
+  color: var(--basic-white);
+  text-decoration: none;
+
+}
+
+
+.footer-menu {
+  text-transform: uppercase;
+}
+
+
+
+/* Contacts */
+
+.contacts-phone {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 15px;
+  line-height: 20px;
+  color: inherit;
+}
