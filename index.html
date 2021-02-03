@@ -34,16 +34,16 @@
             </li>
           </ul>
 
-          <form class="search">
+          <form class="search-button">
             <input type="search" placeholder="Поиск по сайту">
-            <button type="submit"></button>
+            <button type="submit">найти</button>
           </form>
 
           <section class="main-menu">
             <h2>Меню сайта</h2>
-            <ul>
-              <li class="main-menu catalog">
-                <a href="catalog.html">каталог товаров</a>
+            <ul class="main-menu-list">
+              <li>
+                <a class="catalog" href="catalog.html">каталог товаров</a>
                 <ul class="catalog-list">
                   <li>
                     <a class="catalog-item" href="#">Виртуальная реальность</a>
@@ -66,14 +66,14 @@
                 </ul>
               </li>
 
-              <li class="main-menu delivery">
-                <a href="#">доставка</a>
+              <li>
+                <a class="delivery" href="#">доставка</a>
               </li>
-              <li class="main-menu warranty">
-                <a href="#">гарантия</a>
+              <li>
+                <a class="warranty" href="#">гарантия</a>
               </li>
-              <li class="main-menu contacts">
-                <a href="#">контакты</a>
+              <li>
+                <a class="contacts" href="#">контакты</a>
               </li>
             </ul>
           </section>
@@ -84,7 +84,7 @@
 
   <main class="container">
     <div class="slider">
-      <ol>
+      <ol class="slider-list">
         <li class="slide-1">
           <img src="img/slide-1-selfie-stick.png" width="384" height="486" alt="Селфи-палка Бена Стиллера">
           <p class="topic">Делай селфи, как Бен Стиллер!</p>
@@ -170,13 +170,13 @@
     <section class="service">
       <h2>Сервис</h2>
       <div>
-        <button class="button service-button" type="button">доставка</button>
-        <button class="button service-button" type="button">гарантия</button>
-        <button class="button service-button" type="button">кредит</button>
+        <button class="button button-narrow" type="button">доставка</button>
+        <button class="button button-narrow" type="button">гарантия</button>
+        <button class="button button-narrow" type="button">кредит</button>
       </div>
 
       <div>
-        <ul>
+        <ul class="service-list">
           <li>
             <p class="service-head">Доставка</p>
             <p class="service-info">Мы с удовольствием доставим ваш товар прямо к вашему <br>
@@ -237,15 +237,15 @@
         <li>Автотрейдинг</li>
         <li>ЖелДорЭкспедиция</li>
       </ul>
-      <button class="button about-us-button" type="button">подробнее о нас</button>
+      <button class="button button-wide" type="button">подробнее о нас</button>
     </section>
 
-    <section class="contacts">
-      <h2 class="contacts-head">Контакты</h2>
-      <p class="contacts-info">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете <br>
+    <section class="write-us">
+      <h2 class="write-us-head">Контакты</h2>
+      <p class="write-us-info">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете <br>
         проверить работоспособность покупки. Всякое бывает.</p>
       <img src="img/map1.png" width="560" height="222" alt="Карта, г. Москва, ул. Строителей, 15">
-      <button class="button contacts-button" type="button">Напишите нам</button>
+      <button class="button button-wide" type="button">Напишите нам</button>
     </section>
 
   </main>
@@ -257,13 +257,13 @@
 
     <ul class="footer-site-navigation">
       <li>
-        <a class="login-link" href="#">Войти</a>
+        <a class="footer-login-link" href="#">Войти</a>
       </li>
       <li>
-        <a class="compare-link" href="#">Сравнить</a>
+        <a class="footer-compare-link" href="#">Сравнить</a>
       </li>
       <li>
-        <a class="cart-link" href="#">Корзина</a>
+        <a class="footer-cart-link" href="#">Корзина</a>
       </li>
     </ul>
 
@@ -273,15 +273,15 @@
 
     <section class="footer-menu">
       <h2>Меню сайта</h2>
-      <ul>
+      <ul class="footer-menu-list">
         <li>
-          <a href="#">доставка</a>
+          <a class="footer-delivery" href="#">доставка</a>
         </li>
         <li>
-          <a href="#">гарантия</a>
+          <a class="footer-warranty" href="#">гарантия</a>
         </li>
         <li>
-          <a href="#">контакты</a>
+          <a class="footer-contacts" href="#">контакты</a>
         </li>
       </ul>
     </section>
@@ -292,18 +292,18 @@
 
     <section class="footer-social">
       <h2>Мы в социальных сетях</h2>
-      <ul>
+      <ul class="footer-social-list">
         <li>
-          <a class="social-button" href="#">Facebook</a>
-          <img src="img/socials-facebook.svg" width="32" height="32" alt="Логотип Facebook">
+          <a href="#">Facebook</a>
+          <img class="social-button" src="img/socials-facebook.svg" width="32" height="32" alt="Логотип Facebook">
         </li>
         <li>
-          <a class="social-button" href="#">Instagram</a>
-          <img src="img/socials-instagram.svg" width="32" height="32" alt="Логотип Instagram">
+          <a href="#">Instagram</a>
+          <img class="social-button" src="img/socials-instagram.svg" width="32" height="32" alt="Логотип Instagram">
         </li>
         <li>
-          <a class="social-button" href="#">Twitter</a>
-          <img src="img/socials-twitter.svg" width="32" height="32" alt="Логотип Twitter">
+          <a href="#">Twitter</a>
+          <img class="social-button" src="img/socials-twitter.svg" width="32" height="32" alt="Логотип Twitter">
         </li>
       </ul>
     </section>
@@ -318,18 +318,18 @@
     <h2>Напишите нам</h2>
     <form action=" https://echo.htmlacademy.ru" method="post">
       <p>
-        <label class="modal-description" for="name-surname">Ваше имя:</label>
-        <input type="text" id="name-surname" name="name" placeholder="Имя Фамилия">
+        <label class="name" for="name-surname">Ваше имя:</label>
+        <input class="input-name" type="text" id="name-surname" name="name" placeholder="Имя Фамилия">
       </p>
       <p>
-        <label class="modal-description" for="e-mail">Ваш e-mail:</label>
-        <input type="email" id="e-mail" name="your-email" placeholder="email@example.com">
+        <label class="email" for="e-mail">Ваш e-mail:</label>
+        <input class="input-email" type="email" id="e-mail" name="your-email" placeholder="email@example.com">
       </p>
       <p>
-        <label class="modal-description" for="textarea">Текст письма:</label>
-        <input type="text" id="textarea" name="letter" placeholder="В свободной форме">
+        <label class="letter" for="textarea">Текст письма:</label>
+        <input class="input-letter" type="text" id="textarea" name="letter" placeholder="В свободной форме">
       </p>
-      <button class="button" type="submit">отправить</button>
+      <button class="button button-send" type="submit">отправить</button>
     </form>
     <button class="modal-close" type="button">Закрыть</button>
   </section>
