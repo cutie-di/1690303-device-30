@@ -33,7 +33,6 @@
 
 /* Global */
 body {
-  min-width: 1440px;
   margin: 0;
   padding: 0;
   font-family: "Gilroy", "Arial", sans-serif;
@@ -196,6 +195,10 @@ img {
   line-height: 15px;
 }
 
+.description th{
+	font-weight: 300;
+}
+
 .category-list {
   list-style: none;
   padding: 0;
@@ -297,11 +300,6 @@ img {
 
 .button-send {
   width: 200px;
-}
-
-.button:hover,
-.button:focus {
-  opacity: 0.6;
 }
 
 .button:active {
@@ -473,9 +471,5 @@ img {
   opacity: 0.4;
   font-size: 14px;
   line-height: 19px;
-}
-
-.input-name input[type="text"],
-.input-email input[type="email"] {
   background-color: var(--background-input-form);
 }
