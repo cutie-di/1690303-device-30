@@ -102,7 +102,7 @@ img {
   opacity: 0.3;
 }
 
-.сart-link:hover,
+.cart-link:hover,
 .cart-link:focus {
   opacity: 0.6;
 }
@@ -735,5 +735,5 @@ img {
 .pagination-back:active,
 .pagination-next:active{
   background-color: var(--pagination-button);
-  opacity: 0.3;
+  color: rgba(0, 0, 0, 0.3)
 }
