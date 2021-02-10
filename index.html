@@ -13,16 +13,22 @@
   <link href="css/style.css" rel="stylesheet">
 </head>
 
-<body class="page-body">
+<body class="page-body container">
   <header class="main-header">
     <nav class="main-navigation">
       <a class="main-header-logo">
         <img src="img/logo/logo.svg" width="163" height="35" alt="Логотип «DEVICE»">
       </a>
+      <div class="main-header-bar">
+        <div class="main-navigation-wrapper">
 
-      <div class="main-navigation-wrapper">
-        <div class="container">
           <ul class="header-site-navigation">
+            <li>
+              <form class="search-button">
+                <input type="search" placeholder="Поиск по сайту">
+                <button type="submit">найти</button>
+              </form>
+            </li>
             <li>
               <a class="login-link" href="#">Войти</a>
             </li>
@@ -33,11 +39,6 @@
               <a class="cart-link" href="#">Корзина</a>
             </li>
           </ul>
-
-          <form class="search-button">
-            <input type="search" placeholder="Поиск по сайту">
-            <button type="submit">найти</button>
-          </form>
 
           <section class="main-menu">
             <h2>Меню сайта</h2>
@@ -82,7 +83,8 @@
     </nav>
   </header>
 
-  <main class="container">
+  <main class="main-container">
+
     <div class="slider">
       <ol class="slider-list">
         <li class="slide-1">
@@ -105,7 +107,8 @@
           </table>
         </li>
 
-        <li class="slide-2">
+
+        <li class="slide-2 hidden">
           <img src="img/slide-2-band.png" width="345" height="485" alt="Фитнес-браслет «Я вижу, что ты снова ешь»">
           <p class="topic">Худеем правильно!</p>
           <p class="topic-text">Мотивирующие фитнес-браслеты помогут найти в себе силы <br>
@@ -121,7 +124,7 @@
           </table>
         </li>
 
-        <li class="slide-3">
+        <li class="slide-3 hidden">
           <img src="img/slide-3-drone.png" width="526" height="334" alt="Дрон с камерой и лазером»">
           <p class="topic">Порхает как бабочка, жалит как пчела!</p>
           <p class="topic-text">Этот обычный, на первый взгляд, квадрокоптер оснащен <br>
@@ -141,7 +144,6 @@
       </ol>
 
     </div>
-
 
     <section class="category">
       <h2>Категории товаров</h2>
@@ -183,13 +185,13 @@
               подъезду совершенно бесплатно! Ведь мы неплохо <br>
               заработаем, поднимая его на ваш этаж.</p>
           </li>
-          <li>
+          <li class="hidden">
             <p class="service-head">Гарантия</p>
             <p class="service-info">Если из-за возгорания купленного у нас товара у вас сгорит дом — <br>
               не переживайте, мы выдадим вам новый. <br>
               Товар, не дом, конечно же.<br>
           </li>
-          <li>
+          <li class="hidden">
             <p class="service-head">Кредит</p>
             <p class="service-info">Залезть в долговую яму стало проще! Кредитные консультанты <br>
               подберут для вас наиболее выгодные <br>
@@ -226,27 +228,30 @@
       </ul>
     </section>
 
-    <section class="about-us">
-      <h2 class="about-us-head">О нас</h2>
-      <p class="about-us-info">Огромный выбор гаджетов не оставит равнодушным гика, <br>
-        который есть в каждом из нас.</p>
-      <p class="about-us-info">Мы можем доставить ваш товар в самые отдаленные точки <br>
-        России! DEVICE работает со многими транспортными компаниями:</p>
-      <ul class="transport-company">
-        <li>Деловые линии</li>
-        <li>Автотрейдинг</li>
-        <li>ЖелДорЭкспедиция</li>
-      </ul>
-      <button class="button button-wide" type="button">подробнее о нас</button>
-    </section>
+    <div class="info-columns">
+      <section class="about-us">
+        <h2 class="about-us-head">О нас</h2>
+        <p class="about-us-info">Огромный выбор гаджетов не оставит равнодушным гика, <br>
+          который есть в каждом из нас.</p>
+        <p class="about-us-info">Мы можем доставить ваш товар в самые отдаленные точки <br>
+          России! DEVICE работает со многими транспортными компаниями:</p>
+        <ul class="transport-company">
+          <li>Деловые линии</li>
+          <li>Автотрейдинг</li>
+          <li>ЖелДорЭкспедиция</li>
+        </ul>
+        <button class="button button-wide" type="button">подробнее о нас</button>
+      </section>
 
-    <section class="write-us">
-      <h2 class="write-us-head">Контакты</h2>
-      <p class="write-us-info">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете <br>
-        проверить работоспособность покупки. Всякое бывает.</p>
-      <img src="img/map1.png" width="560" height="222" alt="Карта, г. Москва, ул. Строителей, 15">
-      <button class="button button-wide" type="button">Напишите нам</button>
-    </section>
+      <section class="write-us">
+        <h2 class="write-us-head">Контакты</h2>
+        <p class="write-us-info">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете <br>
+          проверить работоспособность покупки. Всякое бывает.</p>
+        <img src="img/map1.png" width="560" height="222" alt="Карта, г. Москва, ул. Строителей, 15">
+        <button class="button button-wide" type="button">Напишите нам</button>
+      </section>
+
+    </div>
 
   </main>
 
@@ -314,7 +319,7 @@
 
   </footer>
 
-  <section class="modal modal-feedback">
+  <section class="modal modal-feedback hidden">
     <h2>Напишите нам</h2>
     <form action=" https://echo.htmlacademy.ru" method="post">
       <p>
