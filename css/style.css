@@ -48,9 +48,6 @@
   background-color: var(--basic-white);
 
   min-height: 100%;
-  /*display: grid;
-  grid-template-rows: min-content 1fr min-content;
-  align-content: start;*/
 }
 
 img {
@@ -61,9 +58,12 @@ img {
 /* Main header */
 
 .main-header {
-  margin-bottom: 76px;
   outline: 5px solid rgba(0, 255, 0, 0.7);
   outline-offset: -5px;
+}
+
+.main-header-inner-page {
+  margin-bottom: 44px;
 }
 
 .hidden {
@@ -178,10 +178,6 @@ img {
   list-style: none;
   padding: 0;
   margin: 0;
-
-  /*
-  display: grid;
-  grid-template-columns: repeat(4, 1fr); */
 }
 
 .catalog,
@@ -759,13 +755,31 @@ img {
 
 /* Catalog-page */
 
+.page-catalog {
+  outline: 5px solid rgba(255, 0, 0, 0.7);
+  outline-offset: -5px;
+
+  display: grid;
+  grid-template-columns: 330px 1fr;
+
+}
+
+.page-catalog-head{
+ grid-column: 1 / -1;
+}
+
 .page-title {
   font-family: "Gilroy", "Arial", sans-serif;
   font-weight: 800;
   font-size: 47px;
   line-height: 58px;
-}
 
+  margin: 0;
+  margin-bottom: 30px;
+  padding: 0;
+  outline: 5px solid rgba(0, 255, 0, 0.7);
+  outline-offset: -5px;
+}
 
 /* Breadecrumbs */
 
@@ -773,6 +787,10 @@ img {
   list-style: none;
   padding: 0;
   margin: 0;
+
+  margin-bottom: 50px;
+  outline: 5px solid rgba(0, 0, 255, 0.7);
+  outline-offset: -5px;
 }
 
 .breadcrumbs a {
@@ -793,6 +811,10 @@ img {
 
 /* Filter */
 
+.filter-wrapper {
+  background-color: var(--background-grey-light);
+}
+
 .filter-title,
 .sort-title {
   font-family: "Gilroy", "Arial", sans-serif;
@@ -805,10 +827,15 @@ img {
 
 .filter-title {
   background-color: var(--filter-title-grey);
+
+  grid-column: 1 / 2;
 }
 
-.filter {
-  background-color: var(--background-grey-light);
+.filters {
+  outline: 5px solid rgba(30, 255, 0, 0.7);
+  outline-offset: -5px;
+
+  width: 330px;
 }
 
 .filter legend {
@@ -830,6 +857,11 @@ img {
 
 .sort {
   background-color: var(--background-grey-light);
+
+  outline: 5px solid rgba(4, 0, 255, 0.7);
+  outline-offset: -5px;
+
+  width: 830px;
 }
 
 .sort-button {
@@ -878,6 +910,14 @@ img {
 
 /* Items */
 
+.items {
+  outline: 5px solid rgba(234, 0, 255, 0.7);
+  outline-offset: -5px;
+
+  margin-left: 70px;
+
+}
+
 .item-title {
   font-family: "Gilroy", "Arial", sans-serif;
   font-weight: 800;
@@ -904,11 +944,20 @@ img {
 
 /* Pagination */
 
+.pagination-box{
+  margin-bottom: 78px;
+}
+
 .pagination {
   background-color: var(--pagination-grey);
   list-style: none;
   margin: 0;
   padding: 0;
+
+  outline: 5px solid rgba(255, 251, 0, 0.9);
+  outline-offset: -5px;
+
+  width: 760px;
 }
 
 .pagination a {
