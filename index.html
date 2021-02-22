@@ -14,82 +14,72 @@
 </head>
 
 <body class="page-body">
-  <header class="main-header">
-    <nav class="main-navigation">
-      <div class="container">
-        <a class="main-header-logo">
-          <img src="img/logo/logo.svg" width="163" height="35" alt="Логотип «DEVICE»">
-        </a>
+  <header class="main-header container">
+    <nav class="main-navigation ">
+      <a>
+        <img class="main-header-logo" src="img/logo/logo.svg" width="163" height="35" alt="Логотип «DEVICE»">
+      </a>
 
-        <div class="main-navigation-wrapper">
+      <div class="header-first-level">
 
-          <div class="header-first-level">
-            <div class="header-first-level-flex">
+        <form class="search-button">
+          <input type="search" placeholder="Поиск по сайту">
+          <button type="submit">найти</button>
+        </form>
 
-              <form class="search-button">
-                <input type="search" placeholder="Поиск по сайту">
-                <button type="submit">найти</button>
-              </form>
+        <ul class="header-site-navigation">
+          <li>
+            <a class="login-link" href="#">Войти</a>
+          </li>
+          <li>
+            <a class="compare-link" href="#">Сравнить</a>
+          </li>
+          <li>
+            <a class="cart-link" href="#">Корзина</a>
+          </li>
+        </ul>
+      </div>
 
-              <ul class="header-site-navigation">
+      <div class="header-second-level">
+        <div class="main-menu">
+          <ul class="main-menu-list">
+            <li>
+              <a class="catalog" href="catalog.html">каталог товаров</a>
+              <ul class="catalog-list visually-hidden">
                 <li>
-                  <a class="login-link" href="#">Войти</a>
+                  <a class="catalog-item" href="#">Виртуальная реальность</a>
                 </li>
                 <li>
-                  <a class="compare-link" href="#">Сравнить</a>
+                  <a class="catalog-item" href="#">Моноподы для селфи</a>
                 </li>
                 <li>
-                  <a class="cart-link" href="#">Корзина</a>
+                  <a class="catalog-item" href="#">Экшн-камеры</a>
+                </li>
+                <li>
+                  <a class="catalog-item" href="#">Фитнес-браслеты</a>
+                </li>
+                <li>
+                  <a class="catalog-item" href="#">Умные часы</a>
+                </li>
+                <li>
+                  <a class="catalog-item" href="#">Квадрокоптер</a>
                 </li>
               </ul>
-            </div>
-          </div>
+            </li>
 
-          <div class="header-second-level">
-            <div class="header-second-level-flex">
-              <div class="main-menu">
-                <ul class="main-menu-list">
-                  <li>
-                    <a class="catalog" href="catalog.html">каталог товаров</a>
-                    <ul class="catalog-list visually-hidden">
-                      <li>
-                        <a class="catalog-item" href="#">Виртуальная реальность</a>
-                      </li>
-                      <li>
-                        <a class="catalog-item" href="#">Моноподы для селфи</a>
-                      </li>
-                      <li>
-                        <a class="catalog-item" href="#">Экшн-камеры</a>
-                      </li>
-                      <li>
-                        <a class="catalog-item" href="#">Фитнес-браслеты</a>
-                      </li>
-                      <li>
-                        <a class="catalog-item" href="#">Умные часы</a>
-                      </li>
-                      <li>
-                        <a class="catalog-item" href="#">Квадрокоптер</a>
-                      </li>
-                    </ul>
-                  </li>
-
-                  <li>
-                    <a class="delivery" href="#">доставка</a>
-                  </li>
-                  <li>
-                    <a class="warranty" href="#">гарантия</a>
-                  </li>
-                  <li>
-                    <a class="contacts" href="#">контакты</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-
+            <li>
+              <a class="delivery" href="#">доставка</a>
+            </li>
+            <li>
+              <a class="warranty" href="#">гарантия</a>
+            </li>
+            <li>
+              <a class="contacts" href="#">контакты</a>
+            </li>
+          </ul>
         </div>
       </div>
+
     </nav>
   </header>
 
@@ -100,7 +90,8 @@
         <li class="slide-1">
           <img src="img/slide-1-selfie-stick.png" width="384" height="486" alt="Селфи-палка Бена Стиллера">
           <div class="slide-description">
-            <p class="topic">Делай селфи, как Бен Стиллер!</p>
+            <div class="slide-decoration-line"></div>
+            <p class="topic">Делай селфи,<br> как Бен Стиллер!</p>
             <p class="topic-text">Самая длинная палка для селфи доступна в нашем магазине. <br>
               Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
             <button class="button slider-button" type="button">подробнее</button>
@@ -169,7 +160,7 @@
           <a class="category-item" href="#">Виртуальная реальность</a>
         </li>
         <li>
-          <a class="category-item" href="#">Моноподы для селфи</a>
+          <a class="category-item" href="#">Моноподы<br> для селфи</a>
         </li>
         <li>
           <a class="category-item" href="#">Экшн-камеры</a>
@@ -181,7 +172,7 @@
           <a class="category-item" href="#">Умные часы</a>
         </li>
         <li>
-          <a class="category-item" href="#">Квадрокоптер</a>
+          <a class="category-item" href="#">Квадрокоптеры</a>
         </li>
       </ul>
     </section>
@@ -223,8 +214,7 @@
       </div>
     </section>
 
-    <section class="container">
-      <h2 class="visually-hidden">Бренды</h2>
+    <div class="container">
       <ul class="brands">
         <li>
           <a href="#">
@@ -247,10 +237,12 @@
           </a>
         </li>
       </ul>
-    </section>
+    </div>
 
-    <div class="info-columns container">
-      <section class="about-us">
+    <section class="info-columns container">
+
+      <div class="about-us">
+        <div class="info-decoration-line"></div>
         <h2 class="about-us-head">О нас</h2>
         <p class="about-us-info about-us-info-first-paragraph">Огромный выбор гаджетов не оставит равнодушным гика, <br>
           который есть в каждом из нас.</p>
@@ -263,128 +255,125 @@
           <li>ЖелДорЭкспедиция</li>
         </ul>
         <button class="button button-wide" type="button">подробнее о нас</button>
-      </section>
+      </div>
 
-      <section class="write-us">
+      <div class="write-us">
+        <div class="info-decoration-line"></div>
         <h2 class="write-us-head">Контакты</h2>
         <p class="write-us-info">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете <br>
           проверить работоспособность покупки. Всякое бывает.</p>
         <img src="img/map1.png" width="560" height="222" alt="Карта, г. Москва, ул. Строителей, 15">
         <button class="button button-wide" type="button">Напишите нам</button>
-      </section>
+      </div>
 
-    </div>
+    </section>
 
   </main>
 
   <footer class="main-footer">
     <div class="container">
 
-
       <div class="footer-first-level">
-        <div class="footer-first-level-flex">
 
-          <a>
-            <img class="footer-logo" src="img/logo/logo.svg" width="163" height="35" alt="Логотип «DEVICE»">
-          </a>
+        <a>
+          <img class="footer-logo" src="img/logo/logo.svg" width="163" height="35" alt="Логотип «DEVICE»">
+        </a>
 
-          <ul class="footer-site-navigation">
-            <li class="footer-login-link-block">
-              <svg width="9" height="10" viewBox="0 0 9 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <ul class="footer-site-navigation">
+          <li class="footer-login-link-block">
+            <svg width="9" height="10" viewBox="0 0 9 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M4.49996 0.333328C5.69704 0.333328 6.66663 1.3775 6.66663 2.66666C6.66663 3.95583 5.69704 5 4.49996 5C3.30288 5 2.33329 3.95583 2.33329 2.66666C2.33329 1.3775 3.30288 0.333328 4.49996 0.333328ZM4.49996 9.66666C4.49996 9.66666 8.83329 9.66666 8.83329 8.5C8.83329 7.1 6.72079 5.58333 4.49996 5.58333C2.27913 5.58333 0.166626 7.1 0.166626 8.5C0.166626 9.66666 4.49996 9.66666 4.49996 9.66666Z"
+                fill="#FFC600" />
+            </svg>
+            <a class="footer-login-link" href="#">Войти</a>
+          </li>
+          <li class="footer-compare-link-block">
+            <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M0.916748 3.36667H2.66675V9.08334H0.916748V3.36667ZM4.18342 0.916672H5.81675V9.08334H4.18342V0.916672ZM7.45008 5.58334H9.08342V9.08334H7.45008V5.58334Z"
+                fill="#FFC600" />
+            </svg>
+
+            <a class="footer-compare-link" href="#">Сравнить</a>
+          </li>
+          <li class="footer-cart-link-block">
+            <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0)">
                 <path
-                  d="M4.49996 0.333328C5.69704 0.333328 6.66663 1.3775 6.66663 2.66666C6.66663 3.95583 5.69704 5 4.49996 5C3.30288 5 2.33329 3.95583 2.33329 2.66666C2.33329 1.3775 3.30288 0.333328 4.49996 0.333328ZM4.49996 9.66666C4.49996 9.66666 8.83329 9.66666 8.83329 8.5C8.83329 7.1 6.72079 5.58333 4.49996 5.58333C2.27913 5.58333 0.166626 7.1 0.166626 8.5C0.166626 9.66666 4.49996 9.66666 4.49996 9.66666Z"
-                  fill="#FFC600" />
-              </svg>
-              <a class="footer-login-link" href="#">Войти</a>
-            </li>
-            <li class="footer-compare-link-block">
-              <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  d="M1.75233 2.89316V3.4188C1.75233 4.1907 2.40546 4.7735 3.15323 4.7735C3.901 4.7735 4.55413 4.1907 4.55413 3.4188V2.89316H5.35593V3.4188C5.35593 4.1907 6.00906 4.7735 6.75684 4.7735C7.50461 4.7735 8.15774 4.1907 8.15774 3.4188V2.89316H9.44194L8.80742 8.73049L8.80498 8.75292L8.80457 8.77548C8.79691 9.19912 8.47244 9.49999 8.12584 9.49999H1.78431C1.43757 9.49999 1.11319 9.19908 1.10558 8.77563L1.10518 8.75304L1.10274 8.73058L0.468207 2.89316H1.75233Z"
+                  fill="#FFC600" stroke="black" />
                 <path
-                  d="M0.916748 3.36667H2.66675V9.08334H0.916748V3.36667ZM4.18342 0.916672H5.81675V9.08334H4.18342V0.916672ZM7.45008 5.58334H9.08342V9.08334H7.45008V5.58334Z"
+                  d="M3.15333 3.76068C3.35207 3.76068 3.51369 3.60735 3.51369 3.4188V1.53846C3.51369 1.01051 4.07486 0.683761 4.59477 0.683761H5.49567C6.04288 0.683761 6.39657 1.01923 6.39657 1.53846V3.4188C6.39657 3.60735 6.55829 3.76068 6.75693 3.76068C6.95558 3.76068 7.11729 3.60735 7.11729 3.4188V1.53846C7.11729 0.647009 6.43531 0 5.49567 0H4.59477C3.60126 0 2.79297 0.690171 2.79297 1.53846V3.4188C2.79297 3.60735 2.95459 3.76068 3.15333 3.76068Z"
                   fill="#FFC600" />
-              </svg>
+              </g>
+              <defs>
+                <clipPath id="clip0">
+                  <rect width="10" height="10" fill="#FFC600" />
+                </clipPath>
+              </defs>
+            </svg>
+            <a class="footer-cart-link" href="#">Корзина</a>
+          </li>
+        </ul>
 
-              <a class="footer-compare-link" href="#">Сравнить</a>
-            </li>
-            <li class="footer-cart-link-block">
-              <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <g clip-path="url(#clip0)">
-                  <path
-                    d="M1.75233 2.89316V3.4188C1.75233 4.1907 2.40546 4.7735 3.15323 4.7735C3.901 4.7735 4.55413 4.1907 4.55413 3.4188V2.89316H5.35593V3.4188C5.35593 4.1907 6.00906 4.7735 6.75684 4.7735C7.50461 4.7735 8.15774 4.1907 8.15774 3.4188V2.89316H9.44194L8.80742 8.73049L8.80498 8.75292L8.80457 8.77548C8.79691 9.19912 8.47244 9.49999 8.12584 9.49999H1.78431C1.43757 9.49999 1.11319 9.19908 1.10558 8.77563L1.10518 8.75304L1.10274 8.73058L0.468207 2.89316H1.75233Z"
-                    fill="#FFC600" stroke="black" />
-                  <path
-                    d="M3.15333 3.76068C3.35207 3.76068 3.51369 3.60735 3.51369 3.4188V1.53846C3.51369 1.01051 4.07486 0.683761 4.59477 0.683761H5.49567C6.04288 0.683761 6.39657 1.01923 6.39657 1.53846V3.4188C6.39657 3.60735 6.55829 3.76068 6.75693 3.76068C6.95558 3.76068 7.11729 3.60735 7.11729 3.4188V1.53846C7.11729 0.647009 6.43531 0 5.49567 0H4.59477C3.60126 0 2.79297 0.690171 2.79297 1.53846V3.4188C2.79297 3.60735 2.95459 3.76068 3.15333 3.76068Z"
-                    fill="#FFC600" />
-                </g>
-                <defs>
-                  <clipPath id="clip0">
-                    <rect width="10" height="10" fill="#FFC600" />
-                  </clipPath>
-                </defs>
-              </svg>
-              <a class="footer-cart-link" href="#">Корзина</a>
-            </li>
-          </ul>
-
-        </div>
       </div>
 
 
       <div class="footer-second-level">
-        <div class="footer-second-level-flex">
 
-          <p class="footer-adress">
-            г. Москва, ул. Строителей, 15
-          </p>
+        <p class="footer-adress">
+          г. Москва, ул. Строителей, 15
+        </p>
 
-          <div class="footer-menu">
-            <ul class="footer-menu-list">
-              <li>
-                <a class="footer-delivery" href="#">доставка</a>
-              </li>
-              <li>
-                <a class="footer-warranty" href="#">гарантия</a>
-              </li>
-              <li>
-                <a class="footer-contacts" href="#">контакты</a>
-              </li>
-            </ul>
-          </div>
-
-          <p>
-            <a class="contacts-phone" href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a>
-          </p>
-
+        <div class="footer-menu">
+          <ul class="footer-menu-list">
+            <li>
+              <a class="footer-delivery" href="#">доставка</a>
+            </li>
+            <li>
+              <a class="footer-warranty" href="#">гарантия</a>
+            </li>
+            <li>
+              <a class="footer-contacts" href="#">контакты</a>
+            </li>
+          </ul>
         </div>
+
+        <p>
+          <a class="contacts-phone" href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a>
+        </p>
+
       </div>
 
 
       <div class="footer-third-level">
-        <div class="footer-third-level-flex">
 
-          <div class="footer-social">
-            <ul class="footer-social-list">
-              <li>
-                <a class="visually-hidden" href="#">Facebook</a>
-                <img class="social-button" src="img/socials-facebook.svg" width="32" height="32" alt="Логотип Facebook">
-              </li>
-              <li>
-                <a class="visually-hidden" href="#">Instagram</a>
-                <img class="social-button" src="img/socials-instagram.svg" width="32" height="32"
-                  alt="Логотип Instagram">
-              </li>
-              <li>
-                <a class="visually-hidden" href="#">Twitter</a>
-                <img class="social-button" src="img/socials-twitter.svg" width="32" height="32" alt="Логотип Twitter">
-              </li>
-            </ul>
-          </div>
-
-          <a class="footer-copywrite" href="https://htmlacademy.ru/intensive/htmlcss">
-            <img src="img/logo/logo-academ.svg" width="27" height="34" alt="Логотип «HTML Academy»">
-          </a>
-
+        <div class="footer-decoration-line">
         </div>
+
+
+        <div class="footer-social">
+          <ul class="footer-social-list">
+            <li>
+              <a class="visually-hidden" href="#">Facebook</a>
+              <img class="social-button" src="img/socials-facebook.svg" width="32" height="32" alt="Логотип Facebook">
+            </li>
+            <li>
+              <a class="visually-hidden" href="#">Instagram</a>
+              <img class="social-button" src="img/socials-instagram.svg" width="32" height="32" alt="Логотип Instagram">
+            </li>
+            <li>
+              <a class="visually-hidden" href="#">Twitter</a>
+              <img class="social-button" src="img/socials-twitter.svg" width="32" height="32" alt="Логотип Twitter">
+            </li>
+          </ul>
+        </div>
+
+        <a class="footer-copywrite" href="https://htmlacademy.ru/intensive/htmlcss">
+          <img src="img/logo/logo-academ.svg" width="27" height="34" alt="Логотип «HTML Academy»">
+        </a>
+
       </div>
 
 
