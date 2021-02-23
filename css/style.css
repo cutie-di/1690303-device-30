@@ -683,10 +683,11 @@ th:last-child{
   content: "";
   left: 0;
   top: 50%;
+  border: 2px solid var(--background-grey-light);
+  border-radius: 8px;
   transform: translateY(-50%);
   width: 8px;
   height: 8px;
-  background-color: var(--background-grey-light);
 }
 
 .about-us button{
