@@ -46,24 +46,24 @@
           <ul class="main-menu-list">
             <li>
               <a class="catalog" href="catalog.html">каталог товаров</a>
-              <ul class="header-catalog-list display-non">
+              <ul class="header-catalog-list">
                 <li>
                   <a class="header-catalog-item" href="#">Виртуальная реальность</a>
-                </li>
-                <li>
-                  <a class="header-catalog-item" href="#">Моноподы для селфи</a>
-                </li>
-                <li>
-                  <a class="header-catalog-item" href="#">Экшн-камеры</a>
                 </li>
                 <li>
                   <a class="header-catalog-item" href="#">Фитнес-браслеты</a>
                 </li>
                 <li>
+                  <a class="header-catalog-item" href="#">Квадрокоптер</a>
+                </li>
+                <li>
+                  <a class="header-catalog-item" href="#">Моноподы для селфи</a>
+                </li>
+                <li>
                   <a class="header-catalog-item" href="#">Умные часы</a>
                 </li>
                 <li>
-                  <a class="header-catalog-item" href="#">Квадрокоптер</a>
+                  <a class="header-catalog-item" href="#">Экшн-камеры</a>
                 </li>
               </ul>
             </li>
@@ -89,13 +89,13 @@
 
     <div class="slider container">
       <ol class="slider-list">
-        <li class="slide slide-1 slide-current visually-hidde">
+        <li class="slide slide-1 slide-current">
           <img src="img/slide-1-selfie-stick.png" width="384" height="486" alt="Селфи-палка Бена Стиллера">
           <div class="slide-description">
             <p class="topic">Делай селфи,<br> как Бен Стиллер!</p>
             <p class="topic-text">Самая длинная палка для селфи доступна в нашем магазине. <br>
               Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
-            <button class="button slider-button" type="button"><span>подробнее</span></button>
+            <button class="button slider-button" type="button">подробнее</button>
             <table class="feature">
               <tr class="characteristics characteristics-first-slide">
                 <td>8,5 м</td>
@@ -111,13 +111,13 @@
           </div>
         </li>
 
-        <li class="slide slide-2 visually-hidden">
+        <li class="slide slide-2">
           <img src="img/slide-2-band.png" width="345" height="485" alt="Фитнес-браслет «Я вижу, что ты снова ешь»">
           <div class="slide-description">
             <p class="topic">Худеем <br>правильно!</p>
             <p class="topic-text">Мотивирующие фитнес-браслеты помогут найти в себе силы <br>
               не пропускать занятия и соблюдать диету.</p>
-            <button class="button slider-button" type="button"><span>подробнее</span></button>
+            <button class="button slider-button" type="button">подробнее</button>
             <table class="feature">
               <tr class="characteristics">
                 <td>48 часов</td>
@@ -129,13 +129,13 @@
           </div>
         </li>
 
-        <li class="slide slide-3 visually-hidden">
+        <li class="slide slide-3">
           <img src="img/slide-3-drone.png" width="526" height="334" alt="Дрон с камерой и лазером»">
           <div class="slide-description">
             <p class="topic">Порхает как бабочка, жалит как пчела!</p>
             <p class="topic-text">Этот обычный, на первый взгляд, квадрокоптер оснащен <br>
               мощным лазером, замаскированным под стандартную камеру.</p>
-            <button class="button slider-button" type="button"><span>подробнее</span></button>
+            <button class="button slider-button" type="button">подробнее</button>
             <table class="feature">
               <tr class="characteristics characteristics-third-slide">
                 <td>800 м</td>
@@ -264,7 +264,7 @@
           <li>Автотрейдинг</li>
           <li>ЖелДорЭкспедиция</li>
         </ul>
-        <button class="button button-wide" type="button"><span>подробнее о нас</span></button>
+        <button class="button button-wide" type="button">подробнее о нас</button>
       </div>
 
       <div class="write-us info-decoration-line">
@@ -272,7 +272,7 @@
         <p class="write-us-info">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете <br>
           проверить работоспособность покупки. Всякое бывает.</p>
         <img src="img/map1.png" width="560" height="222" alt="Карта, г. Москва, ул. Строителей, 15">
-        <button class="button button-wide" type="button"><span>Напишите нам</span></button>
+        <button class="button button-wide" type="button">Напишите нам</button>
       </div>
 
     </section>
@@ -335,15 +335,21 @@
         <div class="footer-social">
           <ul class="footer-social-list">
             <li>
-              <a class="visually-hidden" href="#">Facebook</a>
+              <a href="#">
+                <span class="visually-hidden">Facebook</span>
+              </a>
               <img class="social-button" src="img/socials-facebook.svg" width="32" height="32" alt="Логотип Facebook">
             </li>
             <li>
-              <a class="visually-hidden" href="#">Instagram</a>
+              <a href="#">
+                <span class="visually-hidden">Instagram</span>
+              </a>
               <img class="social-button" src="img/socials-instagram.svg" width="32" height="32" alt="Логотип Instagram">
             </li>
             <li>
-              <a class="visually-hidden" href="#">Twitter</a>
+              <a href="#">
+                <span class="visually-hidden">Twitter</span>
+              </a>
               <img class="social-button" src="img/socials-twitter.svg" width="32" height="32" alt="Логотип Twitter">
             </li>
           </ul>
@@ -359,7 +365,7 @@
     </div>
   </footer>
 
-  <section class="modal modal-feedback visually-hidden">
+  <section class="modal modal-feedback display-none">
     <h2 class="visually-hidden">Напишите нам</h2>
     <form class="modal-feedback-form" action="https://echo.htmlacademy.ru" method="post">
       <p class="modal-feedback-item modal-first-level">
@@ -371,8 +377,8 @@
         <input class="input-email" type="email" id="e-mail" name="your-email" placeholder="email@example.com">
       </p>
       <p class="modal-feedback-item modal-second-level">
-        <label class="letter" for="textarea">Текст письма:</label>
-        <input class="input-letter" type="text" id="textarea" name="letter" placeholder="В свободной форме">
+        <label class="letter">Текст письма:</label>
+        <textarea class="input-letter" placeholder="В свободной форме"></textarea>
       </p>
       <button class="button button-send" type="submit">отправить</button>
     </form>
@@ -381,7 +387,7 @@
 
 
 
-  <section class="modal modal-map visually-hidden">
+  <section class="modal modal-map display-none">
     <h2 class="visually-hidden">Как до нас добраться</h2>
     <iframe
       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.1123749473236!2d37.52742931550307!3d55.68703400453057!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsINCg0L7RgdGB0LjRjywgMTE5MzEx!5e0!3m2!1sru!2s!4v1614558231352!5m2!1sru!2s"
