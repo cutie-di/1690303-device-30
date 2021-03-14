@@ -17,16 +17,21 @@
 <body class="page-body">
   <header class="main-header container">
     <nav class="main-navigation ">
-      <a href="index.html">
-        <img class="main-header-logo" src="img/logo/logo.svg" width="163" height="35" alt="Логотип «DEVICE»">
-      </a>
+
+      <div class="main-header-logo">
+        <a href="index.html">
+          <img src="img/logo/logo.svg" width="163" height="35" alt="Логотип «DEVICE»">
+        </a>
+      </div>
 
       <div class="header-first-level">
 
-        <form class="search-button">
-          <input type="search" placeholder="Поиск по сайту">
-          <button type="submit">найти</button>
-        </form>
+        <div class="search-wrapper">
+          <form class="search-button">
+            <input type="search" placeholder="Поиск по сайту">
+            <button type="submit">найти</button>
+          </form>
+        </div>
 
         <ul class="header-site-navigation">
           <li>
@@ -43,9 +48,12 @@
 
       <div class="header-second-level">
         <div class="main-menu">
+
           <ul class="main-menu-list">
-            <li>
-              <a class="catalog" href="catalog.html">каталог товаров</a>
+
+            <li class="catalog-menu-item">
+              <a class="catalog" href="#">каталог товаров</a>
+
               <ul class="header-catalog-list">
                 <li>
                   <a class="header-catalog-item" href="#">Виртуальная реальность</a>
@@ -57,7 +65,7 @@
                   <a class="header-catalog-item" href="#">Квадрокоптер</a>
                 </li>
                 <li>
-                  <a class="header-catalog-item" href="#">Моноподы для селфи</a>
+                  <a class="header-catalog-item" href="catalog.html">Моноподы для селфи</a>
                 </li>
                 <li>
                   <a class="header-catalog-item" href="#">Умные часы</a>
@@ -168,7 +176,7 @@
           <a href="#">Виртуальная реальность</a>
         </li>
         <li class="category-item monopods">
-          <a href="#">Моноподы <br>для селфи</a>
+          <a href="catalog.html">Моноподы <br>для селфи</a>
         </li>
         <li class="category-item action-cameras">
           <a href="#">Экшн-камеры</a>
@@ -198,20 +206,20 @@
 
         <div>
           <ul class="service-list">
-            <li class="display-non">
-              <p class="service-head service-delivery">Доставка</p>
+            <li class="service-delivery">
+              <p class="service-head">Доставка</p>
               <p class="service-info">Мы с удовольствием доставим ваш товар прямо к вашему <br>
                 подъезду совершенно бесплатно! Ведь мы неплохо <br>
                 заработаем, поднимая его на ваш этаж.</p>
             </li>
-            <li class="display-none">
-              <p class="service-head service-warranty">Гарантия</p>
+            <li class="service-warranty">
+              <p class="service-head">Гарантия</p>
               <p class="service-info">Если из-за возгорания купленного у нас товара у вас сгорит дом — <br>
                 не переживайте, мы выдадим вам новый. <br>
                 Товар, не дом, конечно же.<br>
             </li>
-            <li class="display-none">
-              <p class="service-head service-credit">Кредит</p>
+            <li class="service-credit">
+              <p class="service-head ">Кредит</p>
               <p class="service-info">Залезть в долговую яму стало проще! Кредитные консультанты <br>
                 подберут для вас наиболее выгодные <br>
                 условия кредита. Выгодные для нашего банка, разумеется.
@@ -274,8 +282,16 @@
         <h2 class="write-us-head">Контакты</h2>
         <p class="write-us-info">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете <br>
           проверить работоспособность покупки. Всякое бывает.</p>
-        <img src="img/map1.png" width="560" height="222" alt="Карта, г. Москва, ул. Строителей, 15">
-        <button class="button button-wide" type="button">Напишите нам</button>
+        <div class="popup-link-map">
+          <a class="contacts-button-map" href="map.html">
+            <img src="img/map1.png" width="560" height="222" alt="Карта, г. Москва, ул. Строителей, 15">
+          </a>
+        </div>
+
+        <div class="popup-link-contacts">
+          <a class="write-us-button button button-wide" href="writeus.html">Напишите нам</a>
+        </div>
+
       </div>
 
     </section>
@@ -373,15 +389,15 @@
     <form class="modal-feedback-form" action="https://echo.htmlacademy.ru" method="post">
       <p class="modal-feedback-item modal-first-level">
         <label class="name" for="name-surname">Ваше имя:</label>
-        <input required class="input-name" type="text" id="name-surname" name="name" placeholder="Имя Фамилия">
+        <input class="input-name" type="text" id="name-surname" name="your-name" placeholder="Имя Фамилия">
       </p>
       <p class="modal-feedback-item modal-first-level">
         <label class="email" for="e-mail">Ваш e-mail:</label>
-        <input required class="input-email" type="email" id="e-mail" name="your-email" placeholder="email@example.com">
+        <input class="input-email" type="email" id="e-mail" name="your-email" placeholder="email@example.com">
       </p>
       <p class="modal-feedback-item modal-second-level">
         <label class="letter" for="textarea">Текст письма:</label>
-        <textarea required class="input-letter" id="textarea" placeholder="В свободной форме"></textarea>
+        <textarea class="input-letter" id="textarea" placeholder="В свободной форме"></textarea>
       </p>
       <button class="button button-send" type="submit">отправить</button>
     </form>
@@ -398,6 +414,8 @@
     <button class="modal-close modal-close-map" type="button" aria-label="Закрыть"></button>
   </section>
 
+
+  <script src="js/script.js"></script>
 
 </body>
 
