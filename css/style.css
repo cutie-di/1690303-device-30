@@ -215,8 +215,10 @@ img {
   text-transform: uppercase;
 }
 
+.search-button:hover button,
 .search-button:focus button,
 .search-button:active button,
+.search-wrapper:hover::before,
 .search-wrapper:focus::before,
 .search-wrapper:active::before {
   display: block;
@@ -1594,7 +1596,6 @@ th {
   color: var(--basic-black);
 }
 
-
 .name,
 .email,
 .letter {
@@ -1709,11 +1710,15 @@ th {
   transform: translateY(-50%);
   bottom: auto;
   z-index: 5;
+ background-image: url(/img/map-big.jpg);
+ background-size: cover;
+ background-position: 0 0;
 }
 
 .modal-map iframe {
   border: none;
 }
+
 
 
 /* Modal-Close */
@@ -2350,8 +2355,8 @@ th {
 }
 
 
-.item-img-wrapper:hover,
-.item-img-wrapper:focus {
+.catalog-item:hover img,
+.catalog-item:focus img{
  opacity: 0.7;
 }
 
