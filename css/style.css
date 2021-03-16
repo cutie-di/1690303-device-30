@@ -151,7 +151,7 @@ img {
   margin: 23px 60px 51px;
 }
 
-.search-button {
+.search-wrapper {
   position: relative;
   padding-left: 36px;
   font-family: "Open Sans", "Arial", sans-serif;
@@ -160,10 +160,10 @@ img {
   background-color: transparent;
   font-size: 15px;
   line-height: 20px;
+  width: 440px;
 }
 
-
-.search-button::before {
+.search-wrapper::before {
   position: absolute;
   content: "";
   left: 0;
@@ -177,34 +177,22 @@ img {
   background-size: 100%;
 }
 
-.search-button input {
+.search-wrapper input {
   background-color: transparent;
   border: none;
   opacity: 0.3;
 }
 
-.search-button input:hover,
-.search-button input:focus {
+.search-wrapper input:hover,
+.search-wrapper input:focus {
   opacity: 0.6;
 }
 
-.search-wrapper {
-  position: relative;
-  width: 440px;
+.search-wrapper input:active {
+  opacity: 1;
 }
 
-.search-wrapper::before {
-  display: none;
-  position: absolute;
-  content: "";
-  right: 0;
-  bottom: -13px;
-  width: 440px;
-  height: 2px;
-  background-color: var(--basic-black);
-}
-
-.search-button button {
+.search-button {
   display: none;
   position: absolute;
   padding: 15px;
@@ -215,24 +203,41 @@ img {
   text-transform: uppercase;
 }
 
-.search-button:hover button,
-.search-button:focus button,
-.search-button:active button,
-.search-wrapper:hover::before,
-.search-wrapper:focus::before,
-.search-wrapper:active::before {
-  display: block;
+.search-button::after {
+  display: none;
+  position: absolute;
+  content: "";
+  right: 0;
+  bottom: -2px;
+  width: 440px;
+  height: 2px;
+  background-color: var(--basic-black);
 }
 
-.search-button button:hover,
-.search-button button:focus {
+.search-button:hover,
+.search-button:focus {
   color: var(--basic-white);
   background-color: var(--basic-black);
 }
 
-.search-button button:active {
+.search-button:active {
   color: var(--button-text-opacity-3);
 }
+
+.search-wrapper:hover .search-button,
+.search-wrapper:focus .search-button,
+.search-wrapper:active .search-button,
+.search-wrapper:hover .search-button::after,
+.search-wrapper:focus .search-button::after,
+.search-wrapper:active .search-button::after{
+  display: block;
+}
+
+
+input[type="search"]:focus ~ .search-button,
+input[type="search"]:focus ~ .search-button::after{
+  display: block;
+  }
 
 
 .login-link {
@@ -1494,8 +1499,8 @@ th {
 
 /* Hover */
 
-.main-header-logo:hover,
-.main-header-logo:focus,
+.main-header-logo img:hover,
+.main-header-logo img:focus,
 .footer-logo:hover,
 .footer-logo:focus {
   opacity: 0.6;
@@ -1710,7 +1715,7 @@ th {
   transform: translateY(-50%);
   bottom: auto;
   z-index: 5;
- background-image: url(/img/map-big.jpg);
+ background-image: url(../img/map-big.jpg);
  background-size: cover;
  background-position: 0 0;
 }
