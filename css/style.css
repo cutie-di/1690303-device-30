@@ -57,6 +57,7 @@
   color: var(--basic-black);
   background-color: var(--basic-white);
   min-height: 100%;
+  min-width: 1200px;
 }
 
 *,
@@ -482,7 +483,7 @@ input[type="search"]:focus ~ .search-button::after{
   padding-bottom: 40px;
 }
 
-.catalog-menu-item:focus-within .header-catalog-list {
+.main-menu-list:focus-within .header-catalog-list {
   display: flex;
 }
 
