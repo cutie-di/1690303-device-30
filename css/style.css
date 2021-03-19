@@ -2052,8 +2052,7 @@ input[type="search"]:focus~.search-button::after {
   border-radius: 50%;
 }
 
-.filter-input-radio:focus+label::before,
-.filter-input-radio:focus:not(:checked)+label::before {
+.filter-input-radio:focus+label::before {
   outline: 2px solid var(--basic-black)
 }
 
@@ -2162,6 +2161,13 @@ input[type="search"]:focus~.search-button::after {
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+
+.sort-button-list a {
+  display: block;
+  width: 10px;
+  height: 11px;
 }
 
 .sort-button-up {
