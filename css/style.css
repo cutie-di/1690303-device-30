@@ -112,12 +112,12 @@ img {
   font-size: 15px;
   line-height: 20px;
   color: inherit;
-  min-height: 320px;
+  height: 320px;
   background: linear-gradient(180deg, var(--basic-white) 20px, var(--background-yellow) 20px);
 }
 
 .main-navigation-inner-page {
-  min-height: 206px;
+  height: 206px;
 }
 
 .header-site-navigation {
@@ -384,7 +384,6 @@ input[type="search"]:focus~.search-button::after {
   padding: 0;
   margin: 0;
   letter-spacing: 0.2em;
-  z-index: 1;
 }
 
 /* Catalog */
@@ -545,6 +544,10 @@ input[type="search"]:focus~.search-button::after {
 }
 
 .slide {
+  display: none;
+}
+
+.slide-current {
   display: flex;
   justify-content: space-between;
 }
@@ -621,7 +624,6 @@ input[type="search"]:focus~.search-button::after {
 .slide-1 {
   margin-right: 82px;
   margin-left: 89px;
-  /*display: none;*/
 }
 
 .slide-1 img {
@@ -667,7 +669,6 @@ input[type="search"]:focus~.search-button::after {
   margin-right: 64px;
   margin-left: 116px;
   margin-bottom: -17px;
-  display: none;
 }
 
 .slide-2 img {
@@ -700,7 +701,6 @@ input[type="search"]:focus~.search-button::after {
 .slide-3 {
   margin-right: 66px;
   margin-left: 31px;
-  display: none;
 }
 
 .slide-3 img {
@@ -963,6 +963,14 @@ input[type="search"]:focus~.search-button::after {
   list-style: none;
 }
 
+.service-item {
+  display: none;
+}
+
+.service-item-active {
+  display: block;
+}
+
 .service-head {
   font-size: 47px;
   line-height: 58px;
@@ -993,10 +1001,6 @@ input[type="search"]:focus~.search-button::after {
   background-size: 100%;
 }
 
-.service-warranty {
-  display: none;
-}
-
 .service-warranty::after {
   position: absolute;
   content: "";
@@ -1008,10 +1012,6 @@ input[type="search"]:focus~.search-button::after {
   background-repeat: no-repeat;
   background-position: 0 0;
   background-size: 100%;
-}
-
-.service-credit {
-  display: none;
 }
 
 .service-credit::after {
@@ -2213,7 +2213,7 @@ input[type="search"]:focus~.search-button::after {
 /* Item Button */
 
 .item-buttons {
-  opacity: 0;
+  display: none;
   position: absolute;
   text-align: center;
   top: 170px;
@@ -2324,12 +2324,15 @@ input[type="search"]:focus~.search-button::after {
 }
 
 .item-img-wrapper:hover+.item-buttons {
-  opacity: 1;
+  display: block;
 }
 
-.item-buttons:hover,
+.item-buttons:hover {
+  display: block;
+}
+
 .catalog-item:focus-within .item-buttons {
-  opacity: 1;
+  display: block;
 }
 
 /* New */
